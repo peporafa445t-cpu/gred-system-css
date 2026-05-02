@@ -1,0 +1,191 @@
+.container{
+display: grid;
+
+ grid-template-areas:"header header header header header header "
+  "side side con1 con1 con1 con1 "
+ "side side con2 con2 con3 con3"
+  "footer footer footer footer footer footer  ";
+  gap: 10px;
+}  
+   
+.header{
+    grid-area: header;
+    background-color: aqua;
+    font-weight: bold;
+    /* padding: 30px; */
+   text-align: center;
+   /* height: 200px; */
+   display: flex;
+   justify-content:space-around;
+   text-align: center;
+   box-shadow: 10px 10px 10px gray;
+}
+.header ul{
+    display: flex;
+}
+.header ul li {
+    display: flex;
+    justify-content: space-around;
+  
+  
+   margin: 10px 10px;
+  
+
+    }
+    .header h1{
+        color: #fff;
+    }
+    .header ul li a{
+     
+        /* text-decoration: none; */
+        color: #fff;
+        transition: 1s;
+    }
+  .header ul li a:hover{
+    color: black;
+  }  
+.header img{
+    width: 50px;
+    height:50px;
+   
+   }
+.side{
+    grid-area: side ;
+    background-color: blue;
+     font-weight: bold;
+    padding: 30px;
+   text-align: center;
+   height: 400pxpx;
+   box-shadow: 10px 10px 10px gray;
+}
+.con1{
+    grid-area:con1;
+    background-color: brown;
+     font-weight: bold;
+  
+   text-align: center;
+    height:500px;
+    box-shadow: 10px 10px 10px gray;
+   
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    gap: 5px;
+   
+}
+.card{
+    border: 3px solid black;
+}
+.card:hover{
+       box-shadow: 5px 5px 5px gray;
+}
+.card img{
+    /* border: 3px solid black; */
+   
+    filter: brightness(70%);
+    transition: 0.30s;
+}
+.card img:hover{
+    filter: brightness(100%);
+     /* box-shadow: 5px 5px 5px gray; */
+}
+
+.cards img{
+    height: 200px;
+}
+/* .side{
+    grid-area: side ;
+    background-color: blue;
+     font-weight: bold;
+    padding: 30px;
+   text-align: center;
+   height: 200px;
+} */
+
+
+
+
+
+
+.con2{
+    grid-area: con2;
+    background-color: red;
+     font-weight: bold;
+    padding: 30px;
+   text-align: center;
+    height: 200px;
+}
+.con3{
+    grid-area:con3;
+    background-color: green;
+     font-weight: bold;
+    padding: 30px;
+   text-align: center;
+    height: 200px;
+}
+.footer{
+    grid-area:footer;
+    background-color: yellow;
+     font-weight: bold;
+    padding: 30px;
+   text-align: center;
+    height: 100px;
+    box-shadow: 10px 10px 10px gray;
+    
+}
+.side form{
+    border: 3px solid black;
+    margin:5px 5px;
+    padding: 10px;
+}
+.side form button{
+    border: 2px solid black;
+}
+.side form button:hover{
+    background-color: rgb(236, 146, 10);
+}
+.con2{
+    text-align: center;
+    box-shadow: 10px 10px 10px gray;
+}
+.parts{
+     display: flex;
+    justify-content: space-around;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    gap: 5px;
+}
+.part{
+     border: 3px solid black;
+     transition: 0.30s;
+     margin: 3px 3px;
+     padding: 2px 2px;
+}
+.part:hover{
+    background-color: beige;
+    color: red;
+  transform: scaleY(1.1);
+}
+.location{
+    text-align: center;
+   
+}
+.map{
+    border: 3px solid black;
+    transition: 0.30s;
+}
+.map:hover{
+    background-color: #fff;
+    box-shadow: 10px 10px 10px gray;
+}
+.icons a{
+    color:#E51C68;
+    transition: 1s;
+}
+.icons a:hover{
+    color: blue;
+}
+
